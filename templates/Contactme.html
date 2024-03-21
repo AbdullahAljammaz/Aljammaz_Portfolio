@@ -1,20 +1,26 @@
+<head>
+{% include 'bootstrap.html' %}
+  </head>
+<body>
+  {% include 'banner.html' %}
 <h4>Send me massage </h4>
 <form action = '/message_aubmitted' method = 'post'>  
-<div> 
+<div class="mb-2"> 
 <label>Full name </label><br>
 <input type="text" name="full_name" placeholder="Abdullah Aljammaz">
 </div>
 
 
- <div> 
+ <div class="mb-2"> 
 <label>Full name </label><br>
 <input type="text" name="email" placeholder="Abdullah@xyz.com"
 </div>
 
-<div>
+<div class="mb-2">
 <label>Message</label><br>
   <textarea type="text" name="message"></textarea>
 </div>
 
   <input type="submit">
 </form>
+</body>
